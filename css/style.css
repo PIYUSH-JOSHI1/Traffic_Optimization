@@ -1,7 +1,7 @@
 /********** Template CSS **********/
 :root {
-    --primary: #3cdeea;
-    --secondary: #0f0feb;
+    --primary: #28efef;
+    --secondary: #0d0dec;
     --light: #F0F6FF;
     --dark: #262B47;
 }
@@ -269,6 +269,7 @@ h6,
         left 0px top 0px,
         right 0px top 50%,
         center bottom;
+        height: 700px;
     background-repeat: no-repeat;
 }
 
