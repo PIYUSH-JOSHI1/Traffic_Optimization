@@ -62,19 +62,19 @@
     createUserWithEmailAndPassword(auth, email, password)
   .then((userCredential) => {
     
- const user = userCredential.user;
-          alert('login successful');
+  const user = userCredential.user;
+          alert('Login successful');
           window.location.href = "/index.html";
         })
         .catch((error) => {
           const errorCode = error.code;
           const errorMessage = error.message;
-          if (errorCode === 'auth/weak-password') {
-            alert('The password is too weak.');
-          } else if (errorCode === 'auth/email-already-in-use') {
-            alert('The email address is already in use.');
+          if (errorCode === 'auth/user-not-found') {
+            alert('No user found with this email.');
+          } else if (errorCode === 'auth/wrong-password') {
+            alert('Incorrect password.');
           } else if (errorCode === 'auth/invalid-email') {
-            alert('The email address is invalid.');
+            alert('Invalid email.');
           } else {
             alert(errorMessage);
           }
