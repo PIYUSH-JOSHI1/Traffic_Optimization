@@ -62,24 +62,13 @@
     createUserWithEmailAndPassword(auth, email, password)
   .then((userCredential) => {
     
-  const user = userCredential.user;
-          alert('Login successful');
-          window.location.href = "/index.html";
-        })
-        .catch((error) => {
-          const errorCode = error.code;
-          const errorMessage = error.message;
-          if (errorCode === 'auth/user-not-found') {
-            alert('No user found with this email.');
-          } else if (errorCode === 'auth/wrong-password') {
-            alert('Incorrect password.');
-          } else if (errorCode === 'auth/invalid-email') {
-            alert('Invalid email.');
-          } else {
-            alert(errorMessage);
-          }
-        });
+    const user = userCredential.user;
+      alert('Login successful');
+      window.location.href = "/index.html";
+    })
+    .catch((error) => {
+      const errorCode = error.code;
+      const errorMessage = error.message;
+      alert(errorMessage);
     });
-  </script>
-</body>
-</html>
+});
