@@ -148,7 +148,7 @@ h6,
     position: relative;
     margin-right: 25px;
     padding: 45px 0;
-    font-family: 'Jost', sans-serif;
+    font-family:'Montserrat' ;
     font-size: 18px;
     font-weight: 500;
     color: var(--light) !important;
@@ -470,7 +470,7 @@ h6,
 .footer .btn.btn-link::before {
     position: relative;
     content: "\f105";
-    font-family: "Font Awesome 5 Free";
+    font-family:'Montserrat' ;
     font-weight: 900;
     margin-right: 10px;
 }
@@ -500,4 +500,20 @@ h6,
     margin-right: 0;
     padding-right: 0;
     border-right: none;
+}
+
+.montserrat{
+    font-family:'Montserrat' ;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    
+  }
+
+ *{
+        font-family:'Montserrat' ;
+
+ }
+  .body{
+    font-family:'Montserrat' ;
 }
