@@ -35,6 +35,23 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
 <link rel="stylesheet" href="afterlogin.css">
+<style>
+    .card{
+        box-shadow:
+        inset 0 -3em 3em rgba(182, 232, 250, 0.3),
+    0 0 0 2px white,
+    0.3em 0.3em 1em rgba(121, 120, 120, 0.6);
+    transition: transform 0.3s ease-in-out;
+    text-align: center;
+    }
+    .zoom-effect {
+        transition: transform 0.3s; /* Add smooth transition */
+    }
+
+    .zoom-effect:hover {
+        transform: scale(1.1); /* Increase scale on hover */
+    }
+</style>
 </head>
 
 <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="51">
@@ -214,7 +231,7 @@
              Our platform utilizes CCTV cameras to track vehicles in real-time, employing sophisticated algorithms for accurate vehicle detection and monitoring. This enables efficient traffic management and congestion reduction through dynamic signal adjustments.</p>
                             <a href="" class="btn btn-primary-gradient py-sm-3 px-4 px-sm-5 rounded-pill me-3 animated slideInLeft"  style="color: aliceblue;margin-left:70px">Read More</a>
                         </div>
-                        <div class="col-lg-4 d-flex justify-content-center justify-content-lg-end wow fadeInUp" data-wow-delay="0.2s" style="margin-bottom: 200000px;" >
+                        <div class="col-lg-4 d-flex justify-content-center justify-content-lg-end wow fadeInUp" data-wow-delay="0.2s" style="margin-bottom: 20000px;" >
                             <img class="img-fluid" src="./img/output-onlinegiftools.gif" alt="" >
 
                             <div class="owl-carousel screenshot-carousel">
@@ -379,28 +396,27 @@
         <span style="color: rgb(28, 29, 12);">Advance </span><span style="color: rgb(96, 99, 95);">Features</span>
       </h1></div>
 
-                    <div class="projcard-container">
-		
-                        <div class="projcard projcard-blue">
-                            <div class="projcard-innerbox">
-                                <video autoplay loop src="./img/Untitled design.mp4" style="object-fit:fill" class="projcard-img" ></video>
-                                <div class="projcard-textbox">
-                                    <div class="projcard-title">Live Object Detection</div>
-                                    <div class="projcard-subtitle">Empower real-time object detection for smarter, safer environments</div>
-                                    <div class="projcard-bar"></div>
-                                    <div class="projcard-description">Experience live object detection through our camera-based system, utilizing cutting-edge computer vision and machine learning technologies. Enhance security, monitor traffic, and enable real-time decision-making with accurate object recognition. Stay informed and proactive with our seamless, camera-powered detection solution.</div>
-                                    
-<a href="./afterlogin.html">                                        <span class="projcard-tag" style="cursor:pointer;">Let's Do</span>
-</a>                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                    </div>
-                    <script>document.querySelectorAll(".projcard-description").forEach(function(box) {
-                        $clamp(box, {clamp: 6});
-                    });</script>
+                   
                 <!-- advance feature end -->
+
+
+                <!-- bootstrap card -->
+              <center>  <div >
+                <div class="zoom-effect card" style="width: 18rem;" id="card">
+                    <video autoplay loop src="./img/Untitled design.mp4"></video>
+                    <div class="card-body">
+                        <h5 class="card-title">Live Object Detection</h5>
+                        <p class="card-text">Experience live object detection through our camera-based system, utilizing cutting-edge computer vision and machine learning technologies. Enhance security, monitor traffic, and enable real-time decision-making with accurate object recognition. </p>
+                        <a href="/index.html" class="btn btn-primary">Let's Do</a>
+                    </div>
+                </div>
+            </div></center>
+                
+<!-- end card -->
+
+
+
+
 
         <!-- Screenshot Start -->
         <div class="container-xxl py-5">
